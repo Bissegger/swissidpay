@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SwissNoteID</title>
+</head>
+<body>
+  <h1>Login</h1>
+  <input id="pw" type="password">
+  <button onclick="login()">Login</button>
+
+  <div id="app" style="display:none;">
+    <h2>💸 Zahlung</h2>
+    <button onclick="pay(10)">10 CHF</button>
+    <button onclick="pay(20)">20 CHF</button>
+
+    <div id="qr"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
