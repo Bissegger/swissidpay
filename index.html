@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>SwissNoteID</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>SwissNoteID Vault</h1>
+
+<div id="loginBox">
+  <input type="password" id="pw" placeholder="Passwort">
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="app" style="display:none;">
+  <h2>📷 Kamera Scanner</h2>
+  <video id="video" width="300" autoplay></video>
+  <button onclick="startCamera()">Start Kamera</button>
+
+  <h2>📤 Upload</h2>
+  <input type="file" id="file">
+  <button onclick="analyzeNote()">AI Analyse</button>
+
+  <h2>💸 Zahlung</h2>
+  <button onclick="generateQR()">Jetzt zahlen</button>
+
+  <div id="result"></div>
+  <div id="qr"></div>
+</div>
+
+<script src="login.js"></script>
+<script src="ai.js"></script>
+<script src="scanner.js"></script>
+<script src="payment.js"></script>
+
+</body>
+</html>
